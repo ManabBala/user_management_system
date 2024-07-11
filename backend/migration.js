@@ -11,7 +11,7 @@ const migration = async () => {
 	users.map((user) => {
 		// console.log(user);
 		Users.create(user).then(() => {
-			console.log(`User, ${user.first_name}, migrated successfully to database`);
+			// console.log(`User, ${user.first_name}, migrated successfully to database`);
 		}).catch((err) => {
 			console.log(err);
 		})
